@@ -1,0 +1,17 @@
+.root {
+    max-width: 280px;
+    
+}
+.cardInfos {
+    background-color: #000;
+    color: #fff;
+    text-decoration-line: none;
+}
+.media {
+    height: 200px;
+}
+
+.globalContainer {
+    background-color: #fff; 
+    padding: 30px;
+}
