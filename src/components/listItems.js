@@ -11,6 +11,22 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 export const mainListItems = (
   <div>
+    <NavLink to="/" className="menu__link">
+      <ListItem button>
+          <ListItemIcon>
+            <FeaturedPlayListIcon />
+          </ListItemIcon>
+          <ListItemText primary="Biographie" />
+      </ListItem>
+    </NavLink>
+    <NavLink to="/membres" className="menu__link">
+      <ListItem button>
+          <ListItemIcon>
+            <FeaturedPlayListIcon />
+          </ListItemIcon>
+          <ListItemText primary="Membres" />
+      </ListItem>
+    </NavLink>
     <NavLink to="/album" className="menu__link">
       <ListItem button>
           <ListItemIcon>

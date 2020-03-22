@@ -20,7 +20,8 @@ import { Route, Switch } from 'react-router-dom';
 import pampersLogo from '../img/logo-pampers.png';
 import "../styles/component/dashboard.scss";
 import { mainListItems } from './listItems';
-import GroupeRock from './GroupeRock';
+import MembresMetallica from './MembresMetallica';
+import Intro from './Intro';
 import Album from './Album';
 
 function Copyright() {
@@ -125,13 +126,6 @@ export default function BaseLayout(props) {
     setOpen(false);
   };
 
-  const handleLogOut = () => {
-    localStorage.removeItem("user");
-    props.history.replace("/auth");
-  }
-
-
-
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -174,6 +168,8 @@ export default function BaseLayout(props) {
             <Grid item xs={12}>
               <Switch>
                 <Route path={`${match.url}`} component={Album}  exact/>
+                <Route path={`${match.url}membres`} component={MembresMetallica}  />
+                <Route path={`${match.url}album`} component={Album}  />
               </Switch>
             </Grid>
           </Grid>

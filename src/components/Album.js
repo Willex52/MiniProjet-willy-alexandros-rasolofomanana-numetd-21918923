@@ -1,39 +1,51 @@
-import React from 'react';
-import WEBSERVICE from '../constants/API';
-import { getAllObject } from '../util/globalWeservice';
+import React from "react";
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import metallica from "../data/mettalica";
+import "./Album.css";
 
-class Album extends React.Component {
-  constructor(props) {
-    super(props);
-    this.initData = this.initData.bind(this);
-  }
+const Album = () => {
+  let listeAlbums = metallica.albums.map((a, index) => (      
+    <Grid item xs={3} key={index}>
+        <Link to= {"/local/album/" + index}>
+        <Card className="root">
+            <CardActionArea>
+            <CardMedia
+                className="media"
+                image={a.cover ? a.cover.standard : "http://www.audioproceedings.com/CadmiumCD/custom/images/recordings/CD-icon.png"}
+                title="Album"
+            />
+                <CardContent className="cardInfos">
+                    <Typography variant="body1" gutterBottom>
+                        {a.title}
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
+            <CardActions className="cardInfos">
+                <Button className="buttonDetail" size="small" color="secondary">
+                    ({a.publicationDate})
+                </Button>
+                <Button className="buttonDetail" size="small" color="primary">
+                    Voir les titres
+                </Button>
+            </CardActions>
+        </Card>
+        </Link>
+    </Grid>
+  ));
 
-  initData(){
-    this.setState({isLoading:true});
-    getAllObject(WEBSERVICE.GETDATAMETALLICA).then((result)=>{
-      console.log("--result-----------",result)
-    }).catch((error)=>{
-      console.log(error);
-    }).finally(()=>{
-      this.setState({isLoading:false});
-    })
-  }
+  return (
+    <Grid container spacing={3}>
+        {listeAlbums}
+    </Grid>
+  );
+};
 
-  componentDidMount() {
-    this.initData();
-  }
-
-  goToEdit = (testId) => {
-    const { match } = this.props;
-    this.props.history.push(`${match.url}/edit/`+testId);
-  }
-  
-  render(){
-    return (
-      <div>
-          tiel
-      </div>
-  );}
-}
-
-export default Album
+export default Album;

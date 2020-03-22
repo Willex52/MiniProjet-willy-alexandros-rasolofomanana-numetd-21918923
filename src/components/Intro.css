@@ -1,0 +1,16 @@
+.intro {
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+}
+.intro-details{
+    display: flex;
+    flex-direction: column;
+}
+.intro-content{
+    flex: 1 0 auto;
+    height: 200px;
+}
+.intro-cover{
+    width: 500px;
+}
