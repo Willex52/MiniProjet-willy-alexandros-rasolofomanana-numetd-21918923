@@ -15,14 +15,14 @@ import Typography from '@material-ui/core/Typography';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import MenuIcon from '@material-ui/icons/Menu';
 import clsx from 'clsx';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import pampersLogo from '../img/logo-pampers.png';
 import "../styles/component/dashboard.scss";
 import { mainListItems } from './listItems';
 import MembresMetallica from './MembresMetallica';
 import Intro from './Intro';
 import Album from './Album';
+import AlbumInfos from './albumLocal/AlbumInfos'
 
 function Copyright() {
   return (
@@ -167,9 +167,10 @@ export default function BaseLayout(props) {
           <Grid container spacing={3}>
             <Grid item xs={12}>
               <Switch>
-                <Route path={`${match.url}`} component={Album}  exact/>
+                <Route path={`${match.url}`} component={Intro}  exact/>
                 <Route path={`${match.url}membres`} component={MembresMetallica}  />
                 <Route path={`${match.url}album`} component={Album}  />
+                <Route path={`${match.url}local/album/:id`} component={AlbumInfos}  />
               </Switch>
             </Grid>
           </Grid>
