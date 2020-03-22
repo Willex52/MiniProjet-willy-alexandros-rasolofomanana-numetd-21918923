@@ -1,0 +1,287 @@
+.market{
+    margin-right: 25px;
+    margin-top: -12px;
+}
+
+.matallica-logo {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    height: 10%;    
+}
+
+.menu__link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+    &.active {        
+        .MuiListItem-button {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+.parsleyError {
+    margin-top: 10px;
+    font-size: 12px;
+    color: red;
+    &>ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.parsley-error {
+    border-bottom-color: red;
+}
+
+.table-search-tool {
+    text-align: right;
+}
+
+.clear__btn-container {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.add-button {
+    display: block !important;
+    margin-left: auto !important;
+    margin-bottom: 20px !important;
+}
+
+.seeMore {
+    margin-top: 20px,
+}
+  
+.paper-container {
+    padding: 20px;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #fff !important;
+}
+
+.error {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.editIcon {
+    margin-right: 10px !important;
+}
+
+.checklist__textfield {
+   width: 100%;
+}
+
+.checklist__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 450px;;
+}
+
+
+
+.checklist__btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.checklist__btn {
+    margin: 0 5px !important;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+
+.paper-container {
+    position: relative;
+}
+
+.c-textfield__group {
+    margin-bottom: 40px !important;
+    .MuiFormControl-root {
+        width: 100%;
+    }
+}
+.filter_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 732px;
+    
+    .c-textfield__group {
+        display: flex;
+        flex-direction: column;
+        .MuiFormControl-root {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .parsleyFilterError {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+select.form-control[multiple] {
+    min-height: 200px;
+}
+
+.select-order{
+    display: flex;
+}
+.btn-group-vertical.btn_topDown {
+    margin-left: 5px;
+}
+
+button.btn.btn-outline-secondary.btn_top {
+    margin-bottom: 12px;
+}
+
+button.btn.btn-outline-secondary.btn_up {
+    margin-bottom: 3px;
+}
+
+button.btn.btn-outline-secondary.btn_down {
+    margin-top: 3px;
+}
+
+button.btn.btn-outline-secondary.btn_bottom {
+    margin-top: 12px;
+}
+
+.btn-success {
+    background-color: #0096a1 !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+.tab-container {
+    background-color: #0096a1 !important;
+    color: white !important;
+}
+
+.checklist__category-container {
+    max-width: 325px;
+    margin: 30px auto;
+    display: flex;
+    margin-bottom: 60px;
+    .MuiFormControl-root {
+        width: 100%;
+        margin-right: 20px;
+    }
+}
+
+.detail{
+    &__header {
+        margin-right: 20px !important;
+    }
+
+    &__table {
+        margin-left: 23px;
+        margin-top: 15px;
+        
+        th, td {
+            padding: 12px 20px;
+        }
+    }
+}
+
+.table-header {
+    margin-top: 20px;
+}
+
+.checklist__info--danger {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
+
+.checklist__actionBtn-container {
+    min-width: 247px !important;
+}
+
+.MuiList-dense {
+    width: auto !important;
+}
+
+.checklist__publish-btn {
+    margin-left: 12px !important;
+}
+
+.idColumn {
+    @media screen and (min-width: 1024px) {
+        min-width: 310px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.market {
+    display: flex;
+    margin-top: 0;
+    &Label {
+        margin-top: 10px !important;
+        margin-right: 10px !important;
+    }
+}
+
+.closableTextfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50% ;
+    margin: 0 auto;
+    .checklist__textfield {
+        width: 100% !important;
+    }
+}
+
+.filter_form {
+    .parsleyError {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+.btn__newItem-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn__newItem {
+    width: 20%;
+}

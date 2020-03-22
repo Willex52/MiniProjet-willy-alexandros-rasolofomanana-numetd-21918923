@@ -1,0 +1,116 @@
+.add-button {
+    display: block !important;
+    margin-left: auto !important;
+    margin-bottom: 20px !important;
+}
+
+.seeMore {
+    margin-top: 20px,
+}
+  
+.paper-container {
+    padding: 20px;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #fff !important;
+}
+
+.error {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.editIcon {
+    margin-right: 10px !important;
+}
+
+.item__textfield {
+   width: 100%;
+}
+
+.item__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 450px;;
+}
+
+.item__btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.item__btn {
+    margin: 0 5px !important;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+
+.paper-container {
+    position: relative;
+}
+
+.c-textfield__group {
+    margin-bottom: 40px !important;
+}
+
+.btn-success {
+    background-color: #0096a1 !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+.tab-container {
+    background-color: #0096a1 !important;
+    color: white !important;
+}
+
+.item__category-container {
+    max-width: 325px;
+    margin: 30px auto;
+    display: flex;
+    margin-bottom: 60px;
+    .MuiFormControl-root {
+        width: 100%;
+        margin-right: 20px;
+    }
+}
+
+.detail{
+    &__header {
+        margin-right: 20px !important;
+    }
+
+    &__table {
+        margin-left: 23px;
+        margin-top: 15px;
+        
+        th, td {
+            padding: 12px 20px;
+        }
+    }
+
+
+    
+}
