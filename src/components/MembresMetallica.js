@@ -16,7 +16,7 @@ const MembresMetallica = () => {
   ));
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer className="table-member" component={Paper}>
       <Table size="small">
         <TableHead>
           <TableRow>
